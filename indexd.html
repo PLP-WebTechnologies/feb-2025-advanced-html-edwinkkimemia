@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <!-- <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List - HOBBIES</h2>
+    <ol type="I">
+        <li>Singing</li>
+        <li>Programming</li>
+        <li>Dancing</li>
+        <li>Writing</li>
+        <li>Playing Football</li>
+    </ol>
+    
+    <!-- External Image -->
+    <h2>Image from Pexels</h2>
+    <img src="https://images.pexels.com/photos/30894155/pexels-photo-30894155/free-photo-of-contemplative-young-man-in-urban-setting.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample Image from Pexels" width="600">
+    
+    <!-- Table of Contacts -->
+    <h2>Contacts Table</h2>
+    <table border="1">
+        <caption>Contacts</caption>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John kamau</td>
+            <td>123 Main St</td>
+            <td>+254 712 345678</td>
+            <td>john@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane Waweru</td>
+            <td>456 Elm St</td>
+            <td>+254 798 123456</td>
+            <td>jane@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Robert Mwangi</td>
+            <td>789 Oak St</td>
+            <td>+254 711 987654</td>
+            <td>robert@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Alice Johnson Mwangi</td>
+            <td>321 Pine St</td>
+            <td>+254 722 654321</td>
+            <td>alice@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Michael Njogu</td>
+            <td>654 Cedar St</td>
+            <td>+254 733 111222</td>
+            <td>michaelnjogu@gmail.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6"><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <!-- Dropdown -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <!-- Radio Buttons -->
+        <label>Subscription Type:</label><br>
+        <input type="radio" id="basic" name="subscription" value="basic" required>
+        <label for="basic">Basic</label>
+        <input type="radio" id="premium" name="subscription" value="premium" required>
+        <label for="premium">Premium</label><br><br>
+        
+        <!-- Checkboxes -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="tech" name="interests" value="tech">
+        <label for="tech">Technology</label><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+    
+    <!-- Multimedia Elements -->
+    <h2>Multimedia</h2>
+    <audio controls>
+        <source src="audio-sample.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <video width="600" controls>
+        <source src="video-sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
